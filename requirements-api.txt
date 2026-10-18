@@ -1,0 +1,12 @@
+# Extra packages for the FastAPI layer (install on top of requirements.txt)
+-r requirements.txt
+# models/*.pkl load cleanly with this version; keep it pinned in production so a
+# newer scikit-learn can't break unpickling the trained model.
+scikit-learn==1.8.0
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+PyJWT>=2.8
+# tests
+pytest>=8
+httpx>=0.27
