@@ -10,3 +10,4 @@ bcrypt
 openpyxl
 reportlab
 plotly
+matplotlib
